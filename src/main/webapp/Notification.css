@@ -1,0 +1,171 @@
+.MyModal *{
+    margin: 0;
+}
+.fas, .far, .fab {
+    margin-right: 5px;
+}
+.MyModal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#Notification-Modal {
+    display: none;
+    width: 35%;
+    border-radius: 15px;
+    margin: 5% auto;
+    background-color: white;
+}
+
+.Notification-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #333;
+    color: white;
+}
+
+.Notification-header h2{
+    display: inline-block;
+    padding: 8px;
+}
+.Notification-header span{
+    float: right;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 12px;
+}
+.Notification-header span:hover {
+    color: lightgray;
+}
+#tabs {
+    display: flex;
+    /* border-bottom: 2px solid grey; */
+}
+#tabs button {
+    flex: 1;
+    padding: 14px 0;
+    transition: 0.3s;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    cursor: pointer;
+}
+.activeTab {
+    border-bottom: 4px solid #333;
+    font-weight: bold;
+}
+
+
+.Notification-body {
+    width: 100%;
+    max-height: 60vh;
+    overflow: auto;
+    animation: fadeEffect 1s;
+}
+
+.Notification {
+    display: flex;
+    align-items: center;
+    /* background-color: goldenrod; */
+}
+.Notification:hover {
+    background-color: lightgray;
+}
+.notif-image {
+    display: flex;
+    margin: 5px;
+}
+.notif-image img {
+    margin: auto;
+    border-radius: 100%;
+}
+.notif-btns{
+    margin-top: 5px;
+}
+.notif-matter {
+    margin-left: 5px;
+}
+
+.notif-matter p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.notif-matter p a:hover {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.Notificaiton-footer {
+    /* background-color: gray; */
+    text-align: right;
+    padding: 10px;
+    /* border-top: 2px solid grey; */
+}
+
+
+/* code for buttons */
+
+.Notificaiton-footer button, .accept-btn, .delete-btn, .chat-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.accept-btn, .delete-btn {
+    margin-right:5px;
+}
+.accept-btn {
+    background-color: forestgreen;
+    color: white;
+}
+.chat-btn {
+    background-color: #2196F3;
+    color: white;
+}
+.Notificaiton-footer button {
+    margin: 0 5px;
+}
+#clear, .delete-btn {
+    background-color: red;
+    color: white;
+}
+#close {
+    background-color: darkcyan;
+    color: white;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 900px)
+{
+    #Notification-Modal {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 700px)
+{
+    #Notification-Modal {
+        width: 100%;
+        margin: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .Notification-body {
+        height: 77vh;
+        max-height: 78vh;
+    }
+    .Notification-header {
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,59 @@
+<div id="PostModal">
+    <div id="newPost" style="background-color: white;">
+        <div class="post-header">
+            <h3>Create Album</h3>
+            <span id="close-post" onclick="PostCloser()">&times;</span>
+        </div>
+        <form action="PostServlet" id="myForm" enctype="multipart/form-data" onsubmit="PostSubmit(event,this)">
+        <div class="post-body">
+                <div id="part1">
+                    <input type="file" name="file1" style="display: none;" id="file1" class="fileInput" onchange="preview(this,event)" accept="video/*,image/*">
+                    <label for="file1">
+                        <img src="http://icons.iconarchive.com/icons/ccard3dev/dynamic-yosemite/1024/Preview-icon.png" alt="" width="100%" id="preview1">
+                        <video src="" autoplay muted loop style="width: 100%;display: none"></video>
+                    </label><br>
+                    <p class="previewName p1">No file selected</p>
+                </div>
+                <div id="part2">
+                    <input type="file" name="file2" style="display: none;" id="file2" class="fileInput" onchange="preview(this,event)" accept="video/*,image/*">
+                    <label for="file2">
+                        <img src="http://icons.iconarchive.com/icons/ccard3dev/dynamic-yosemite/1024/Preview-icon.png" alt="" width="100%" id="preview2">
+                        <video src="" autoplay muted loop style="width: 100%;display: none"></video>
+                    </label><br>
+                    <p class="previewName p2">No file selected</p>
+                </div>
+                <div id="part3">
+                    <input type="file" name="file3" style="display: none;" id="file3" class="fileInput" onchange="preview(this,event)" accept="video/*,image/*">
+                    <label for="file3">
+                        <img src="http://icons.iconarchive.com/icons/ccard3dev/dynamic-yosemite/1024/Preview-icon.png" alt="" width="100%" id="preview3">
+                        <video src="" autoplay muted loop style="width: 100%;display: none"></video>
+                    </label><br>
+                    <p class="previewName p3">No file selected</p>
+                </div>
+                <div id="part4">
+                    <input type="file" name="file4" style="display: none;" id="file4" class="fileInput" onchange="preview(this,event)" accept="video/*,image/*">
+                    <label for="file4">
+                        <img src="http://icons.iconarchive.com/icons/ccard3dev/dynamic-yosemite/1024/Preview-icon.png" alt="" width="100%" id="preview4">
+                        <video src="" autoplay muted loop style="width: 100%;display: none"></video>
+                    </label><br>
+                    <p class="previewName p4">No file selected</p>
+                </div>
+                <div id="part5">
+                    <input type="file" name="file5" style="display: none;" id="file5" class="fileInput" onchange="preview(this,event)" accept="video/*,image/*">
+                    <label for="file5">
+                        <img src="http://icons.iconarchive.com/icons/ccard3dev/dynamic-yosemite/1024/Preview-icon.png" alt="" width="100%" id="preview5">
+                        <video src="" autoplay muted loop style="width: 100%;display: none"></video>
+                    </label><br>
+                    <p class="previewName p5">No file selected</p>
+                </div>
+        </div>
+        <div class="post-footer">
+            <div>
+                <input type="submit" value="upload" id="upload">
+                <div id="PostLoadingAnimation"></div>
+            </div>
+            <p id="redLabel">Please select atleast one file</p>
+        </div>
+        </form>
+    </div>
+</div>

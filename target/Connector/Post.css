@@ -1,0 +1,95 @@
+#PostModal *{
+    margin: 0;
+}
+#PostModal {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: fixed;
+}
+#newPost {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.post-header {
+    background-color: #03a1fc;
+    color: white;
+}
+.post-header h3 {
+    display: inline-block;
+    padding: 10px;
+}
+.post-header span{
+    float: right;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 10px;
+}
+.post-header span:hover {
+    color: lightgray;
+}
+
+.post-body {
+    width: 100%;
+    max-height: 310px;
+    overflow: auto;
+}
+
+#part1, #part2, #part3, #part4, #part5 {
+    width: 47%;
+    display: inline-block;
+    /*float: left;*/
+}
+#part2, #part4 {
+    float: right;
+}
+.previewName {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 15px;
+    overflow: hidden;
+    color: white;
+}
+.post-footer {
+    padding: 10px 20px;
+    display: flex;
+}
+.post-footer p{
+    display: none;
+    flex: 1;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+#upload {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    outline: none;
+}
+#PostLoadingAnimation {
+    display: none;
+    margin-left: 90%;
+    border: 7px solid rgb(206, 199, 186); /* Light grey */
+    border-top: 7px solid /*#3498db;  Blue */ red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

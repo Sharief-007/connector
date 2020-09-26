@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    font-family: 'Lato',sans-serif;
+}
+.fas, .far{
+    margin-right: 10px;
+}
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.content{
+    width: 100%;
+    height: 93vh;
+    display: flex;
+}
+
+.left {
+    flex: 40%;
+    overflow-y: auto;
+}
+.left-header h1 {
+    background-color: gray;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+}
+.search input{
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1.25em;
+}
+.right {
+    flex: 60%;
+}
+
+.person {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 10px
+}
+.person:hover {
+    background: lightgray;
+}
+.image {
+    flex: 12.5%;
+}
+.image img {
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 100%;
+}
+.names {
+    flex: 60%;
+    margin: auto;
+    padding-left: 5%;
+}
+.names h1, .names p {
+    margin: 0;
+}
+.butns {
+    flex:30%;
+    display: flex;
+}
+.butns button {
+    margin: auto;
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.right{
+    background: #e6e6e6;
+    display: flex;
+}
+
+.card {
+    display: none;
+    width: 65%;
+    margin: 15vh auto 0;
+    background-color: white;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+}
+.card .card-header {
+    position: relative;
+    height: 65px;
+}
+#profile-picture {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    border: 5px solid white;
+}
+.card-names {
+    text-align: center;
+    padding: 0;
+}
+.card-names h1, .card-names p {
+    margin: 0;
+}
+.card-details{
+    padding: 0 15px;
+}
+
+.card-social {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card-social i{
+    margin: 0 10px;
+}
+.fa-facebook-square {
+    font-size: 45px;
+    color: #3b5998;
+}
+.fa-twitter {
+    font-size: 45px;
+    color: #00acee;
+}
+
+.fa-youtube {
+    font-size: 45px;
+    color: #c4302b ;
+}
+.fa-linkedin {
+    font-size: 45px;
+    color: #0e76a8;
+}
+.card-footer {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    /*border-top: 2px solid #e6e6e6;*/
+}
+.card-footer a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    color: white;
+}
+.card-footer .oldrequest{
+    background-color: rgb(255,0,0);
+}
+.card-footer .oldrequest:hover {
+    background-color: rgba(255,0,0,0.8);
+}
+.already {
+    background-color: rgb(210, 105, 30);
+}
+.already:hover {
+    background-color: rgba(210, 105, 30, 0.8);
+}
+.card-footer a:nth-child(2)
+{
+    background-color: rgb(52, 152, 219);
+}
+.card-footer a:nth-child(2):hover {
+    background-color: rgba(52, 152, 219,0.8);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .content {
+        display: block;
+    }
+    .left,.right,.card {
+        width: 100%;
+    }
+    .image img {
+        width: 12vw;
+        height: 12vw;
+    }
+    .sidenav {
+    left:0;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.BIGloader {
+    display: none;
+    margin: auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 1s linear infinite;
+}
+
+#LoadingAnimation {
+    display: none;
+    margin: auto;
+    border: 10px solid transparent; /* Light grey */
+    border-top: 10px solid /*#3498db;  Blue */ #333;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left:40%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.number {
+    margin: auto;
+    display: none;
+}
+
+
+
+
+
+
+
+
+

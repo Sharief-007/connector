@@ -1,0 +1,39 @@
+.left-button, .right-button, .slideNumber, .slideDate {
+    position: absolute;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-shadow:1px 1px #666;
+
+}
+.slideNumber, .slideDate {
+    top: 0;
+    font-size: 1.3em;
+}
+
+.slideDate {
+    right: 0;
+}
+.left-button {
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.right-button {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.left-button:hover, .right-button:hover {
+    background-color: black;
+}
+
+.SlideShow {
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

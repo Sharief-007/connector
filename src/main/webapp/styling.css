@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato' , sans-serif;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 7vw;
+    color: #03a1fc;
+    /* color: rgb(3, 115, 252); */
+    text-align: center;
+}
+.personal ,.education, .address ,.social, .image-files{
+    margin: 0px 2vw;
+    border: none;
+    border-top: 2px solid #03a1fc;
+}
+legend {
+    font-size: 1.5em;
+    margin: auto;
+    padding: auto;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+.column1,.e1,.e3,.adrs1,.s1, .preview1{
+    width: 40%;
+    display: inline-block;
+    justify-content: center;
+}
+.column2,.e2,.e4,.adrs2,.s2, .preview2{
+    float: right;
+    width: 40%;
+}
+.personal div ,.education div,.address div,.social div, .image-files div{
+    padding: 10px;
+    font-size :1.15em;
+}
+input[type=text],input[type=date],input[type=email],input[type=url]{
+    margin: auto 10px;
+    width: 60%;
+    height: 1.2em;
+    padding: 5px 15px;
+}
+.column2 select, .education select{
+    width: 60%;
+    height: 25px;
+    margin: auto 10px;
+    padding: 5px 15px;
+}
+
+.e3 ,.e4 {
+    display: none;
+}
+.butt {
+    margin: 20px 2vw 30px 2vw;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.submit {
+    padding: 10px 15px;
+    width: 100%;
+    background: #03a1fc;
+    border-radius: 15px;
+    color: white;
+    border: white;
+    font-size: 1.1em;
+}
+#add {
+    width: 2.2em;
+    height: 2.2em;
+    border: none;
+    border-radius: 100%;
+    background: url('https://image.flaticon.com/icons/svg/1632/1632686.svg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.in {
+    display: none;
+}
+.previews {
+    text-align: center;
+}
+
+#labelp , #labelc {
+    padding: 7px 25px;
+    margin: auto 15px;
+    background: #03a1fc;
+    color: white;
+}
